@@ -89,3 +89,5 @@ So, `Delay()` and VBL syncing together guarantee the right signal—**timing as 
 
 Enjoy making your Mac and your Robot work together—just like in the '80s, but with even more style! 🤖🍏
 
+*(wrote with the help of Cursor AI)*
+
