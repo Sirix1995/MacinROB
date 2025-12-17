@@ -22,8 +22,6 @@
  #include <Events.h>
  #include <Retrace.h>
  
- #define PULSE_DELAY_COUNT 5000
- 
  long finalTicks;
  GrafPtr savePort, deskPort;
  volatile unsigned long robVBLCount = 0;
@@ -53,11 +51,6 @@
 	 long timeout = 0;
  
 	 while((robVBLCount == lastVBL) && (timeout++ < 100000));
- }
- 
- void pulseDelay(int numberCycle) {
-	 long i;
-	 for(i = 0; i < PULSE_DELAY_COUNT * numberCycle; i++) {}
  }
  
  void setScreenWhite() {
