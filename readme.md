@@ -14,7 +14,7 @@ This is a C program for vintage Macintosh computers (tested on Macintosh Classic
 **You can:**
 - Move R.O.B.'s arms using the arrow keys (Up, Down, Left, Right)
 - Open/close R.O.B.'s hands (`Q` = Close, `S` = Open)
-- Turn R.O.B.'s "LED ON" (`T`)
+- Turn R.O.B.'s head led on (`T`)
 - Exit the program (`X`)
 
 Just run the program, put R.O.B. facing your Mac's CRT, and use your keyboard to control your robot companion!
@@ -75,8 +75,9 @@ So, `Delay()` and VBL syncing together guarantee the right signal—**timing as 
     - `Mac #includes.c`
     - `MacTraps`
     - `MacTraps2`
-3. Make sure your project type is set to **Application**.
-4. Build and run.
+3. Put the rsrc file into the project folder
+4. Make sure your project type is set to **Application**.
+5. Build and run.
 
 ### Running
 
