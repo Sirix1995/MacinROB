@@ -75,7 +75,7 @@ So, `Delay()` and VBL syncing together guarantee the right signal—**timing as 
     - `Mac #includes.c`
     - `MacTraps`
     - `MacTraps2`
-3. Put the rsrc file into the project folder
+3. Put the rsrc file into the project folder. It must have the same name as the project file. Rename it if necessary.
 4. Make sure your project type is set to **Application**.
 5. Build and run.
 
