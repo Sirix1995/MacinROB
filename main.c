@@ -205,6 +205,7 @@
  
  int main(void) {
 	 int programEnd = 0;
+	 int i = 0;
 	 EventRecord event;
  
 	 InitGraf(&qd.thePort);
@@ -222,6 +223,13 @@
 	 setScreenBlack();
  
 	 Delay(50, &finalTicks);
+
+	 //Purge screen from GUI glitches
+	 fof(i = 0; i < 8; i++) {
+		 EventRecord dummyEvent;
+		 WaitNextEvent(everyEvent, &dummyEvent, 0, NULL);
+		 setScreenBlack();
+	 } 
  
 	 while (!programEnd) {
 		 if (WaitNextEvent(everyEvent, &event, 60, NULL)) {
