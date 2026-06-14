@@ -234,6 +234,7 @@
 	 setScreenBlack();
 	 Delay(100, &finalTicks);
 	 removeVBLTask();
+	 PaintBehind(NULL, deskPort->visRgn); 
 	 SetPort(savePort);
 	 ShowCursor();
 	 return 0;
