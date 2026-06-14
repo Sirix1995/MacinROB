@@ -225,7 +225,7 @@
 	 Delay(50, &finalTicks);
 
 	 //Purge screen from GUI glitches
-	 fof(i = 0; i < 8; i++) {
+	 for(i = 0; i < 8; i++) {
 		 EventRecord dummyEvent;
 		 WaitNextEvent(everyEvent, &dummyEvent, 0, NULL);
 		 setScreenBlack();
